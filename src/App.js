@@ -24,6 +24,7 @@ import ViewWishlist from "./components/ViewAccount/ViewWishlist";
 import ManageUser from "./components/AdminPanel/ManageUser";
 import ManageProduct from "./components/AdminPanel/ManageProduct";
 import About from "./components/About/About";
+import HomePage from "./components/Home/HomePage";
 
 function App() {
     return (
@@ -33,6 +34,7 @@ function App() {
                 <Header/>
                 <Routes>
                     <Route path="/" element={<Home />}/>
+                    <Route path="/home" element={<HomePage />}/>
                     <Route path="/login" element={<Login />}/>
                     <Route path="/admin" element={<LoginAdmin />}/>
                     <Route path="/register" element={<Register />}/>
