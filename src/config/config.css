@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+a {
+    text-decoration: none;
+}
+.loader-main-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 7px solid #f3f3f3; /* Light grey */
+    border-top: 7px solid #383636; /* Black */
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+}
+
+.login-status-div{
+    color: #5a5afb;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+.not-login-error{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Amarante', cursive;
+    font-size: 20px;
+    color: red;
+}

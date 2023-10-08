@@ -1,0 +1,127 @@
+@import "../../../config/config.css";
+
+.banner-main-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-image: linear-gradient(-45deg, #EE7752, #c6517e, #57abb9, #23D5AB);
+    background-size: 400% 400%;
+    animation: changeBgColor 8s ease-in-out infinite;
+    width: 100%;
+    height: 370px;
+}
+
+.banner-center{
+    text-align: center;
+}
+
+.shop-now-btn{
+    font-family: 'Amarante', cursive;
+    background-color: #ffffff9c;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+.shop-now-btn:hover{
+    background-color: white;
+}
+
+
+.banner-image{
+    width: auto;
+    height: 350px;
+}
+
+.banner-heading{
+    font-family: 'Bungee', cursive;
+    font-size: 28px;
+    text-align: center;
+}
+
+@keyframes changeBgColor{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }    
+}
+
+@media screen and (max-width: 1086px) {
+    .banner-image{
+        width: auto;
+        height: 300px;
+    }
+    .banner-main-div{
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 978px) {
+    .banner-p1{
+        display: none;
+    }
+    .banner-center{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-image{
+        width: auto;
+        height: 250px;
+    }
+    .banner-main-div{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-heading{
+        font-size: 25px;
+    }
+    .shop-now-btn{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 637px) {
+    .banner-image{
+        height: 230px;
+    }
+    .responsive-banner-bn{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 607px) {
+    .banner-main-div{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .responsive-banner-btn{
+        display: none;
+    }
+    .banner-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 419px) {
+    .banner-image{
+        height: 200px;
+    }
+    .banner-main-div{
+        height: 330px;
+    }
+}
