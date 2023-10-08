@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/home/static/css/main.74506fa1.css",
+    "main.js": "/home/static/js/main.99dfd8e1.js",
+    "static/media/anime-img1.png": "/home/static/media/anime-img1.05398151bbdacd2c6b4d.png",
+    "static/media/marvel-img1.png": "/home/static/media/marvel-img1.449cdbc1edf6aac3132a.png",
+    "static/media/gym-img1.png": "/home/static/media/gym-img1.b4aefac18ebe26665240.png",
+    "static/media/p2.png": "/home/static/media/p2.f1769e9b088f0a2f87f2.png",
+    "static/media/p1.png": "/home/static/media/p1.22aa351db4123390a7b1.png",
+    "static/media/todbag.png": "/home/static/media/todbag.f29bf87be583353a0aeb.png",
+    "static/media/product1.png": "/home/static/media/product1.cc39cf5200880843086f.png",
+    "index.html": "/home/index.html",
+    "main.74506fa1.css.map": "/home/static/css/main.74506fa1.css.map",
+    "main.99dfd8e1.js.map": "/home/static/js/main.99dfd8e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74506fa1.css",
+    "static/js/main.99dfd8e1.js"
+  ]
+}
