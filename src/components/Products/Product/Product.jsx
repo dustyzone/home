@@ -8,7 +8,7 @@ function Product({slug, img, title, category, price, originalPrice}){
 
     return(
         <div className="product-card" onClick={()=>navigate(`/product/${slug}`)}>
-            <img src={process.env.REACT_APP_FILE_URL+img} alt="Product1" className="product-img" />
+            <img src={img} alt="Product1" className="product-img" />
             <div className="product-details-div">
                 <div className="product-card-left-div">
                     <div className="product-title">{title}</div>

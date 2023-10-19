@@ -136,7 +136,7 @@ function SingleProduct() {
                     <div className="SingleProduct-main-div">
                         <div className="product-left-div">
                             <GrFormPrevious onClick={prevImgFunc} className="product-nav-btn" />
-                            <img src={process.env.REACT_APP_FILE_URL+product?.img[0]} alt="p1" className="product-page-img" />
+                            <img src={product?.img[0]} alt="p1" className="product-page-img" />
                             <GrFormNext onClick={nextImgFunc} className="product-nav-btn" />
                         </div>
                         <div className="product-right-div">

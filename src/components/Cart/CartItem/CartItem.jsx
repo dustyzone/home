@@ -18,7 +18,7 @@ function CartItem({slug, img, title, price, size, quantity}){
 
     return(
         <div className="cart-item-main-div">
-            <img src={process.env.REACT_APP_FILE_URL+img} alt="p-img" className="cart-pimg"/>
+            <img src={img} alt="p-img" className="cart-pimg"/>
             <div className="cart-item-details">
                 <div className="cart-item-pname">{title}</div>
                 <div className="cart-item-pPrice">₹{price}/-</div>
