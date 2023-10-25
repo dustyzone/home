@@ -4,7 +4,7 @@ function OrderItem({img, title, price, size, quantity}){
 
     return(
         <div className="order-item-main-div">
-            <img src={process.env.REACT_APP_FILE_URL+img} alt="p-img" className="order-pimg"/>
+            <img src={img} alt="p-img" className="order-pimg"/>
             <div className="order-item-details">
                 <div className="order-item-pname">{title}</div>
                 <div className="order-item-pPrice">₹{price}/-</div>

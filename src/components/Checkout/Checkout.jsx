@@ -43,12 +43,27 @@ function Checkout() {
     async function emptyCartFunc(){
         await axios.post(process.env.REACT_APP_BASE_URL+'/auth/empty-cart', {email: loginInfo.email, role: loginInfo.role}).then(res=>{
             getCartDetailsFunc();
+            // window.open('https://buy.stripe.com/test_7sIcPY2Wwerj5PyaEE', 'Payment Window', "width=700,height=700");
             navigate('/payment-success');
         }).catch(error=>{
             toast.error(error?.response?.data?.message, {
                 position: "bottom-right"
             })
         })
+    }
+
+    function linkPayment(){
+        
+        function isWindowClosed(){
+            if(win && win.closed){
+                clearInterval(timer);
+                proceedToPayment();
+            }
+        }
+
+        let win = window.open('https://buy.stripe.com/test_7sIcPY2Wwerj5PyaEE', 'Payment Window', "width=700,height=700");
+        console.log(win);
+        let timer = setInterval(isWindowClosed,1000);
     }
 
     async function proceedToPayment(){
@@ -183,7 +198,8 @@ function Checkout() {
                         <div className="payment-option-text"><input type="radio" id="cod-payment" name="payment-method" value="cod" /> <label htmlFor="cod-payment">Cash on Delivery (COD)</label></div>
                         <div className="payment-option-text"><input type="radio" id="upi-payment" name="payment-method" value="upi" /> <label htmlFor="upi-payment">UPI Payment</label></div>
                         <div className="checkout-btn-group">
-                            <button onClick={proceedToPayment} className="add-new-address-btn">Proceed To Payment</button>
+                            {/* <button onClick={proceedToPayment} className="add-new-address-btn">Proceed To Payment</button> */}
+                            <button onClick={linkPayment} className="add-new-address-btn">Proceed To Payment</button>
                         </div>
                     </div>
                 </div>

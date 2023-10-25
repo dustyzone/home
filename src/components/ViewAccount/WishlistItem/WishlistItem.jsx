@@ -20,7 +20,7 @@ function WishlistItem({slug, img, title, price, getWishlistInfo}){
     return(
         <div className="cart-item-main-div">
             <Link to={`/product/${slug}`}>
-                <img src={process.env.REACT_APP_FILE_URL+img} alt="p-img" className="cart-pimg"/>
+                <img src={img} alt="p-img" className="cart-pimg"/>
             </Link>
             <div className="cart-item-details">
                 <Link to={`/product/${slug}`}>
